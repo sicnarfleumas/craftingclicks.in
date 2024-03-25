@@ -1,14 +1,10 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
-import vercel from "@astrojs/vercel/serverless";
 
-import react from "@astrojs/react";
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://craftingclicks.in',
-  integrations: [mdx(), sitemap(), react()],
-  output: "server",
-  adapter: vercel()
+	site: 'https://example.com',
+	integrations: [mdx(), sitemap()],
 });
