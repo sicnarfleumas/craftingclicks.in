@@ -1,0 +1,69 @@
+---
+import CTA from "./Buttons/CTA.astro"
+---
+
+<section class="team">
+    <h2>Meet The Team</h2>
+    <p class="subheading">Our leadership team consists of experienced individuals, each bringing a nuanced expertise to the table.</p>
+    <div class="team-members">
+        <div class="team-member">
+            <div class="member-img"></div>
+            <h3 class="member-name">Samuel Francis</h3>
+            <h4 class="member-role">Web Developer</h4>
+        </div>
+        <div class="team-member">
+            <div class="member-img"></div>
+            <h3 class="member-name">Kevin Kagoo</h3>
+            <h4 class="member-role">Creative Director</h4>
+        </div>
+        <div class="team-member">
+            <div class="member-img"></div>
+            <h3 class="member-name">Shane Lemeur</h3>
+            <h4 class="member-role">Marketing Operations</h4>
+        </div>
+        </div>
+        <CTA cta="Connect"/>
+</section>
+
+<style>
+    .team {
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 6em 10%;
+         background-color: white;
+         gap: 2em;
+     }
+
+     .subheading {
+        font-size: 1rem;
+         width: 70ch;
+         text-align: center;
+     }
+
+     .team-members{
+        display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         max-width: 1000px;
+         margin: 0 auto;
+     }
+    
+
+     .member-img {
+        width: 275px;
+        height: 350px;
+        background-image: linear-gradient(to bottom, #fec401 0%, #fc9700 100%);
+     }
+    
+     .member-name {
+        font-size: 1.5rem;
+         font-weight: 700;
+     }
+
+     .member-role {
+        font-size: 1rem;
+         font-weight: 400;
+     }
+</style>

@@ -1,0 +1,69 @@
+---
+import { Image } from "astro:assets"
+import CTA from "../components/Buttons/CTA.astro"
+
+import hero_image from "../assets/hero-image.png"
+---
+<section class="hero-section">
+    <div class="left">
+        <h1 class="hero-title">Elevating Brands through <br>Digital Experiences</h1>
+        <p class="hero-subheading">Crafting Clicks for <span class="accent">Businesses</span></p>
+        <CTA />
+    </div>
+
+    <div class="right">
+        <Image
+            src={hero_image}
+            alt="Crafting Clicks happy customers"
+            width={950}
+            class="hero-image"
+        />
+    </div>
+</section>
+
+
+<style>
+    .hero-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    h1, .hero-title {
+		font-family: 'Playfair Display Variable', sans-serif;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 1;
+        text-align: left;
+
+        padding-top: 2.5rem;
+    }
+
+    .hero-subheading {
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 400;
+    }
+    span.accent {
+        color: var(--accent);
+    }
+
+    .left {
+       
+        padding-left: 10%;
+        z-index: 1;
+    }
+
+    .right {
+        margin-left: -25%;
+    }
+
+    .hero-image {
+        margin-right: -10%;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+</style>

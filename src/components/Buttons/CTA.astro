@@ -1,0 +1,26 @@
+---
+const {cta="Free Discovery Call"} = Astro.props;
+---
+
+<button>{cta}</button>
+
+<style>
+    button {
+        display: flex;
+        width: max-content;
+        
+        background: var(--accent);
+        padding: .35em .5em;
+        border-style: none;
+        border-radius: .25rem;
+
+        font-family: inherit;
+        font-size: 1.25rem;
+        color: var(--grey);
+
+        -webkit-appearance: none;
+        text-align: inherit;
+        box-shadow: none;
+        cursor: pointer;
+    }
+</style>
