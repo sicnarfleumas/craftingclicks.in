@@ -6,6 +6,6 @@ import db from "@astrojs/db";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://craftingclicks.in',
   integrations: [mdx(), sitemap(), db()]
 });
