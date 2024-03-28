@@ -4,11 +4,15 @@ import HeroCTA from "./Buttons/MainCta.astro"
 import hero from "../assets/Hero.png"
 import { Image } from "astro:assets"
 ---
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
 <section class="hero-section">
     <div class="left">
         <h1 class="hero-title">Elevating Brands Through <br>Digital Experiences</h1>
-        <p class="hero-sub">Crafting Clicks for <span>Businesses</span></p>
+        <p class="hero-sub">Crafting Clicks for 
+            <span class="typer" id="main" data-words="Gyms,Businesses" data-colors="#E67E22" data-delay="100" data-deleteDelay="1000"></span>
+            <span class="cursor" data-owner="main" data-cursor-display=" "></span>
+        </p>
         <HeroCTA text="Free Discovery Call" link="/contact" />
     </div>
 
@@ -31,9 +35,7 @@ import { Image } from "astro:assets"
         
     }
 
-    span {
-        color: var(--accent);
-    }
+    
     
     .hero-title {
         font-family: 'Playfair Display', serif;
