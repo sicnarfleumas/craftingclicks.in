@@ -1,5 +1,5 @@
 ---
-import CTA from "./Buttons/CTA.astro"
+import HeroCTA from "./Buttons/MainCta.astro"
 
 import hero from "../assets/Hero.png"
 import { Image } from "astro:assets"
@@ -9,7 +9,7 @@ import { Image } from "astro:assets"
     <div class="left">
         <h1 class="hero-title">Elevating Brands Through <br>Digital Experiences</h1>
         <p class="hero-sub">Crafting Clicks for <span>Businesses</span></p>
-        <CTA text="Free Discover Call" link="/contact" />
+        <HeroCTA text="Free Discovery Call" link="/contact" />
     </div>
 
     <div class="right">
@@ -21,19 +21,20 @@ import { Image } from "astro:assets"
 </section>
 
 <style>
-    section {
-        margin-right: -13%;
-    }
+    
     .hero-section {
         display: flex;
         justify-content: space-evenly;
         align-items: top;
         gap: 0rem;
-        padding: 1rem 0;
+        padding: 1rem 10%;
+        
     }
+
     span {
         color: var(--accent);
     }
+    
     .hero-title {
         font-family: 'Playfair Display', serif;
         font-size: 3.5rem;
@@ -48,7 +49,8 @@ import { Image } from "astro:assets"
     }
 
     .right {
-        margin-left: -15%;
+        margin-left: -35%;
+        padding-right: -10% !important;
     }
 
     .left {

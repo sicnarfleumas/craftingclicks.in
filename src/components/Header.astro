@@ -1,5 +1,5 @@
 ---
-import CTA from './Buttons/CTA.astro';
+import HeaderCTA from './Buttons/MainCta.astro';
 import HeaderLink from './HeaderLink.astro';
 
 ---
@@ -10,12 +10,15 @@ import HeaderLink from './HeaderLink.astro';
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
-			<CTA text="Contact" link="/contact" />
+			<HeaderCTA text="Contact" link="/contact" />
 		</div>
 	</nav>
 </header>
 
 <style>
+	header {
+		padding: 0% 10%;
+	}
 	nav {
 		display: flex;
 		justify-content: space-between;

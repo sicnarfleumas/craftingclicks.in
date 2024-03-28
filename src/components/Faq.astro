@@ -1,0 +1,108 @@
+---
+import MainCta from "./Buttons/MainCta.astro"
+
+
+---
+
+<section class="faq">
+    <div class="left">
+        <h2>Frequently Asked <br><span>Questions.</span></h2>
+        <p class="sub-heading">Can’t find what you’re looking for? Reach out to us to know more</p> 
+        <MainCta text="Ask a Question" link="/contact" />
+    </div>
+    <div class="right">
+        
+        <details>
+            <summary>What kinds of businesses do you work with?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+                  
+        <details>
+            <summary>What types of services do you offer?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+                  
+        <details>
+            <summary>What tools do you use to build your websites?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+
+        <details>
+            <summary>How long does each service take to fulfill?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+
+        <details>
+            <summary>What will be required of me throughout the process?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+
+        <details>
+            <summary>What types of data analytics do you provide?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+          
+        <details>
+            <summary>Where is Crafting Clicks located?</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+          
+    </div>
+</section>
+
+<style>
+    .faq {
+        display: flex;
+        justify-content: space-between;
+        flex: wrap;
+        align-items: top;
+        padding: 10% 10%;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 50%;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        gap: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    h2 span {
+        font-weight: 700;
+    }
+
+    .sub-heading {
+        width: 30ch;
+    }
+
+ 
+    details > summary {
+        list-style: none;
+        padding: 2rem 0;
+        font-size: 1.2rem;
+    }
+
+    details {
+      border-top: 1px solid var(--black);
+      padding: 1rem 0 0 .5rem;
+      font-weight: 500;
+    }
+
+    details > p {
+      line-height: 2;
+      font-weight: 400;
+    }
+    
+
+</style>
