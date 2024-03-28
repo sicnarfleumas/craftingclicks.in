@@ -89,19 +89,33 @@ import MainCta from "./Buttons/MainCta.astro"
  
     details > summary {
         list-style: none;
-        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        padding: .5rem 0;
         font-size: 1.2rem;
     }
 
     details {
       border-top: 1px solid var(--black);
-      padding: 1rem 0 0 .5rem;
+      padding: 2rem 0 0 .5rem;
       font-weight: 500;
+
     }
 
     details > p {
       line-height: 2;
       font-weight: 400;
+    }
+
+    details summary:before {
+      content: '+'; /* Use a custom symbol (right-pointing arrow) */
+      font-size: 1.5rem;
+      margin-right: 0.5em; /* Adjust spacing */
+    }
+    details[open] summary:before {
+      content: '-'; /* Change the symbol when details is open */
     }
     
 
