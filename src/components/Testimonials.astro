@@ -1,0 +1,50 @@
+---
+import TestimonialCta from '../components/Buttons/MainCta.astro';
+import SecondaryCta from '../components/Buttons/SecondaryCta.astro';
+---
+
+<section class="testimonials">
+    <div class="left">
+        <h2>What our <br><strong>Clients Say.</strong></h2>
+        <p>Here’s what other business owners had to say about working with us.</p>
+        <div class="container">
+            <TestimonialCta text="Let's Work Together" link="/testimonials" />
+            <SecondaryCta text="View Projects" link="/testimonials" />
+        </div>
+    </div>
+</section>
+
+<style>
+    .testimonials {
+        padding: 1rem 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ECECEC;
+
+        height: 100dvh;
+    }
+
+    .container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: left;
+        margin: 0;
+    }
+
+    div.left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    p {
+        width: 30ch;
+    }
+</style>
