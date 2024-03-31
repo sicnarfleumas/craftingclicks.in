@@ -3,11 +3,12 @@ import FooterCta from './Buttons/MainCta.astro';
 ---
 
 <footer>
-    <div>
+    <div class="footer-divs">
         <h2 class="logo">Crafting Clicks</h2>
         <FooterCta text="New Project" link="/contact" />
     </div>
-    <div>
+
+    <div class="footer-divs">
         <h3>Contact Details</h3>
         <h4>Address</h4>
         <p>Etobicoke, Canada</p>
@@ -17,7 +18,7 @@ import FooterCta from './Buttons/MainCta.astro';
         <p>+1 (647) 831-7552</p>
     </div>
 
-    <div>
+    <div class="footer-divs">
         <h3>Navigation</h3>
         <a href="/">Home</a>
         <a href="/">Projects</a>
@@ -26,7 +27,7 @@ import FooterCta from './Buttons/MainCta.astro';
         <a href="/">Contact</a>
     </div>
 
-    <div>
+    <div class="footer-divs">
         <h3>Socials</h3>
         <a href="/">LinkedIn</a>
         <a href="/">YouTube</a>
@@ -41,6 +42,8 @@ import FooterCta from './Buttons/MainCta.astro';
         background-color: #ECECEC;
     }
 
+    
+
     h3 {
         font-family: 'Playfair Display', serif;
         font-weight: 600;
@@ -49,7 +52,7 @@ import FooterCta from './Buttons/MainCta.astro';
         padding: 0;
     }
 
-    div {
+    .footer-divs {
         display: flex;
         flex-direction: column;
         gap: 1rem;

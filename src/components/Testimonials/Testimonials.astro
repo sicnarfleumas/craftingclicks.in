@@ -1,6 +1,7 @@
 ---
-import TestimonialCta from '../components/Buttons/MainCta.astro';
-import SecondaryCta from '../components/Buttons/SecondaryCta.astro';
+import TestimonialCta from '../Buttons/MainCta.astro';
+import SecondaryCta from '../Buttons/SecondaryCta.astro';
+import Swiper from './Swiper.tsx';
 ---
 
 <section class="testimonials">
@@ -12,6 +13,9 @@ import SecondaryCta from '../components/Buttons/SecondaryCta.astro';
             <SecondaryCta text="View Projects" link="/testimonials" />
         </div>
     </div>
+
+<Swiper client:visible />
+
 </section>
 
 <style>
@@ -21,7 +25,7 @@ import SecondaryCta from '../components/Buttons/SecondaryCta.astro';
         justify-content: space-between;
         align-items: center;
         background-color: #ECECEC;
-
+        gap: 2rem;
         height: 100dvh;
     }
 
@@ -40,8 +44,10 @@ import SecondaryCta from '../components/Buttons/SecondaryCta.astro';
 
     div.left {
         display: flex;
+        flex: wrap;
         flex-direction: column;
         gap: 2rem;
+        width: 100%;
     }
 
     p {
