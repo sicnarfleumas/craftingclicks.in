@@ -1,0 +1,54 @@
+---
+import Image from "astro/components/Image.astro"
+import HeroImage from "../assets/images/hero-image.png"
+
+import CTA from "./buttons/Primary.astro"
+---
+
+<section class="hero">
+    <div class="left">
+      <h1>Elevating Brands through <span>Digital Experiences</span></h1>
+      <p>Crafting Clicks for Businesses</p>
+      <CTA target="/" text="Free Discovery Call"/>
+    </div>
+    <div class="right">
+      <Image src={HeroImage} alt="Happy Business Owner" width={600}/>
+    </div>
+</section>
+
+<style>
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5rem 0;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-family: serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.15;
+    width: 25ch;
+    color: var(--black);
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  p {
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--black);
+  }
+</style>

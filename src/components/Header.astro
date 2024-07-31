@@ -1,0 +1,49 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		<a href="/" class="logo">Crafting Clicks</a>
+		<div class="nav-links">
+			<HeaderLink href="/">Services</HeaderLink>
+			<HeaderLink href="/blog">Work</HeaderLink>
+			<HeaderLink href="/about">Technology</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+		<a href="/" class="cta">contact</a>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 2.5rem 0;
+		padding: 0 1rem;
+		}
+	
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+	
+	.nav-links {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.logo {
+		font-family: serif;
+		font-size: 2rem;
+		text-decoration: none;
+		color: var(--primary);
+		font-weight: 700;
+	}
+
+	.cta {
+		text-transform: uppercase;
+	}
+	
+
+</style>
