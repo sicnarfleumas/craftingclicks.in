@@ -1,0 +1,105 @@
+---
+import star from "../assets/images/star.png"
+import code from "../assets/images/code.png"
+import funnel from "../assets/images/funnel.png"
+
+import Image from "astro/components/Image.astro"
+---
+
+<section class="services">
+  <div class="headings">
+
+  <h2>Our <span>Services.</span></h2>
+  <p>Elevate your digital footprint with our exceptional range of services, meticulously curated to maximize <br>your online presence and propel your business to new heights.</p>
+</div>
+
+  <div class="services-wrapper">
+    
+    <div class="services-card">
+      <Image src={star} alt="CRO Audit of your website" loading={"lazy"} width={60}/>
+      <h3>Website <br>Design</h3>
+      <p class="services-p">Crafting seamless, engaging, and innovative websites that elevate your digital presence</p>
+    </div>
+    
+    <div class="services-card">
+      <Image src={code} alt="Webdesign Optimized for User Experience" loading={"lazy"} width={60}/>
+      <h3>Website <br>Development</h3>  
+      <p class="services-p">Building robust, scalable, and intuitive websites that drive your business forward</p>
+    </div>
+    
+    <div class="services-card">
+      <Image src={funnel} alt="Website Development Services" loading={"lazy"} width={60}/>
+      <h3>CRO <br>Reporting</h3>
+      <p class="services-p">Delivering actionable insights through comprehensive CRO reporting to maximize your conversion rates</p>
+    
+    </div>
+  </div>
+</section>
+
+<style>
+  .services {
+    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-family: serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 2;
+    color: var(--black);
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    color: var(--black);
+    text-align: center;
+  }
+
+  .services-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .services-card{
+    background-color: var(--white);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    
+
+    align-items: center;
+    padding: 5rem 5rem;
+    border-radius: 10px;
+    box-shadow: 5.535px 5.535px 5.535px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  h3 {
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .services-p {
+    line-height: 1.25;
+  }
+
+</style>

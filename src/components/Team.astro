@@ -1,0 +1,109 @@
+---
+import Image from "astro/components/Image.astro"
+import linkedin from "../assets/images/linkedin.png"
+---
+
+<section class="team">
+  <div class="headings">
+    <h2>Meet <span>The Team.</span></h2>
+    <p>Our leadership team consists of experienced individuals, each bringing a nuanced expertise to the table.
+    </p>
+  </div>
+
+  <div class="team-wrapper">
+    
+    <div class="team-card">
+      <div class="team-image-1">
+
+      </div>
+      <div class="top">
+        <h3>Kevin Kagoo</h3>
+        <a href="https://www.linkedin.com/in/kevin-kagoo-0a0558167/" target="_blank">
+          <Image src={linkedin} alt="LinkedIn Hyperlink" width={20}/>
+        </a>
+      </div>
+      <p class="team-p">Growth Engineer</p>
+    </div>
+    
+    
+    <div class="team-card">
+      <div class="team-image-1">
+
+      </div>
+      <h3>Nithish Noel</h3>
+      <p class="team-p">Designer</p>
+    </div>
+</section>
+
+<style>
+  .team {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 15rem 0;
+    width: 100%;
+    max-width: 1200px;
+
+
+  }
+
+  .headings {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+
+  h2 {
+    font-family: serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: var(--black);
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    color: var(--black);
+  }
+
+  .team-wrapper {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .team-image-1 {
+    width: 23rem;
+    height: 25rem;
+    background: var(--Orange-Gradient, linear-gradient(180deg, #FEC401 0%, #FC9700 100%));
+  }
+
+  .top {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .team-p {
+    font-weight: 400;
+  }
+</style>

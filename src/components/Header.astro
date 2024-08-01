@@ -1,9 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import Primary from './buttons/Primary.astro';
 ---
 
-<header>
+
 	<nav>
 		<a href="/" class="logo">Crafting Clicks</a>
 		<div class="nav-links">
@@ -12,20 +12,18 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/about">Technology</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<a href="/" class="cta">contact</a>
+		<Primary target="/" text="CONTACT"/>
 	</nav>
-</header>
 <style>
-	header {
-		margin: 2.5rem 0;
-		padding: 0 1rem;
-		}
+
 	
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		
+		width: 100%;
+		max-width: 1200px;
+		padding: 5dvh 0;
 	}
 	
 	.nav-links {
