@@ -1,10 +1,96 @@
 ---
-
+import Primary from "./buttons/Primary.astro"
 ---
 
 <footer>
-	
+  <div class="footer-wrapper">
+    <h3 class="logo">Crafting Clicks</h3>
+    <Primary target="/" text="New Project" />
+  </div>
+  <div class="footer-wrapper">
+    <h3>Contact Details</h3>
+    <address>
+      <h4 class="contact-h4">Address</h4>
+      <p>Bangalore, India</p>
+    </address>
+    <h4 class="contact-h4">Email</h4>
+    <a href="mailto:kevin@craftingclicks.in">kevin@craftingclicks.in</a>
+    <h4 class="contact-h4">Mobile</h4>
+    <a href="tel:+918939715578">+91 8939715578</a>
+  </div>
+	<div class="footer-wrapper">
+    <h3>Navigation</h3>
+    <nav>
+      <a href="/"><h4>Homepage</h4></a>
+      <a href="/"><h4>Projects</h4></a>
+      <a href="/"><h4>Services</h4></a>
+      <a href="/"><h4>Tools</h4></a>
+      <a href="/"><h4>Contact</h4></a>
+    </nav>
+  </div>
+  <div class="footer-wrapper">
+    <h3>Socials</h3>
+    <a href="https://www.linkedin.com/company/craftingclicks/" target="_blank"><h4>LinkedIn</h4></a>
+  </div>
 </footer>
 <style>
-	
+	footer{
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 5rem 0 5rem;
+    background-color: #ECECEC;
+  }
+
+  .footer-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-family: serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  .contact-h4 {
+    font-weight: 700 !important;
+  }
+
+  h4, p, a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5;
+  }
+
+  .logo {
+		font-family: serif;
+		font-size: 2rem;
+		text-decoration: none;
+		color: var(--primary);
+		font-weight: 700;
+	}
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  nav > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    text-decoration-color: var(--primary);
+  }
 </style>
