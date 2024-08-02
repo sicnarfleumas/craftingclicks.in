@@ -3,6 +3,7 @@ import Primary from "./buttons/Primary.astro"
 ---
 
 <section class="testimonials">
+  <div class="testimonials-wrapper">
   <div class="left">
     <h2>What our <br><span>Clients Say.</span></h2>
     <p>Here’s what other business owners had to say about working with us.</p>
@@ -13,20 +14,25 @@ import Primary from "./buttons/Primary.astro"
     <h3 class="name">Mr. Samuel Francis</h3>
     <h3 class="service">Services: Website design</h3>
   </div>
+</div>
+
 </section>
 
 <style>
   .testimonials {
-    display: flex;
-    align-items: left;
     background-color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    align-items: center;
     padding: 15rem 0;
-    justify-content: left;
     gap: 5rem;
 
     max-width: 1200px;
-    width: 100%;
-
   }
 
   .left {

@@ -4,6 +4,8 @@ import linkedin from "../assets/images/linkedin.png"
 ---
 
 <section class="team">
+  <div class="container">
+
   <div class="headings">
     <h2>Meet <span>The Team.</span></h2>
     <p>Our leadership team consists of experienced individuals, each bringing a nuanced expertise to the table.
@@ -33,18 +35,26 @@ import linkedin from "../assets/images/linkedin.png"
       <h3>Nithish Noel</h3>
       <p class="team-p">Designer</p>
     </div>
+
+  </div>
 </section>
 
 <style>
   .team {
+    display: flex;
+    background-color: var(--white);
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
     padding: 5rem 0 10rem;
     width: 100%;
     max-width: 1200px;
-
-
   }
 
   .headings {
