@@ -21,7 +21,17 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-KBXZFLGK');</script>
 	<!-- End Google Tag Manager -->
+	 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3NPB45ZVY">
+</script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-Y3NPB45ZVY');
+</script>
 
 <link rel="sitemap" href="/sitemap-index.xml" />
 
