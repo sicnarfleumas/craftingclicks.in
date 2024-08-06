@@ -87,4 +87,31 @@ import Primary from "./buttons/Primary.astro"
     font-size: 1rem;
     color: var(--primary);
   }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .testimonials-wrapper {
+      padding: 15rem 2.5%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .testimonials-wrapper {
+      padding: 15rem 2.5%;
+      gap: 2rem;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 768px) {
+    .testimonials-wrapper {
+      flex-direction: column;
+      padding: 15rem 2.5%;
+      gap: 2rem;
+    }
+  
+    .testimonials {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+  }
 </style>

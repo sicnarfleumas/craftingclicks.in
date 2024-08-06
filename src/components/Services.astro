@@ -102,5 +102,19 @@ import Image from "astro/components/Image.astro"
     line-height: 1.25;
     font-size: 1rem;
   }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .services-wrapper {
+      padding: 0 2.5%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .services-wrapper {
+      padding: 0 2.5%;
+      gap: 2rem;
+    }
 
+    .services-card {
+      padding: 4rem 2rem;
+    }
+  }
 </style>

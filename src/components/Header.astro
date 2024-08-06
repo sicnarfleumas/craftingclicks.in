@@ -1,47 +1,24 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import Primary from './buttons/Primary.astro';
+
+import Navbar from './Nav/NavBar.jsx';
 ---
+    <nav>
+        <!-- <a href="/" class="logo">Crafting Clicks</a>
+        <div class="nav-links">
+            <HeaderLink href="/">Services</HeaderLink>
+            <HeaderLink href="/blog">Work</HeaderLink>
+            <HeaderLink href="/about">Technology</HeaderLink>
+            <HeaderLink href="/about">About</HeaderLink>
+        </div>
+        <Primary text="CONTACT"/>
+    </nav> -->
 
+        <Navbar client:load />
 
-	<nav>
-		<a href="/" class="logo">Crafting Clicks</a>
-		<div class="nav-links">
-			<HeaderLink href="/">Services</HeaderLink>
-			<HeaderLink href="/blog">Work</HeaderLink>
-			<HeaderLink href="/about">Technology</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-		<Primary text="CONTACT"/>
-	</nav>
 <style>
 
-	
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 1200px;
-		padding: 5dvh 0;
-	}
-	
-	.nav-links {
-		display: flex;
-		gap: 1rem;
-	}
-
-	.logo {
-		font-family: serif;
-		font-size: 2rem;
-		text-decoration: none;
-		color: var(--primary);
-		font-weight: 700;
-	}
-
-	.cta {
-		text-transform: uppercase;
-	}
-	
+    
 
 </style>
