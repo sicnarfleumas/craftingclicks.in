@@ -7,6 +7,8 @@ import Image from "astro/components/Image.astro"
 ---
 
 <section class="services">
+  <div class="services-container">
+
   <div class="headings">
 
   <h2>Our <span>Services.</span></h2>
@@ -34,15 +36,23 @@ import Image from "astro/components/Image.astro"
     
     </div>
   </div>
+</div>
+
 </section>
 
 <style>
   .services {
-    padding: 7.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    width: 100%;
+    padding: 7.5rem 2.5%;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     width: 100%;
     max-width: 1200px;
   }
@@ -74,7 +84,8 @@ import Image from "astro/components/Image.astro"
   }
 
   .services-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
   }
 
