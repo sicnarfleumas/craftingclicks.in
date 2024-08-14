@@ -81,7 +81,6 @@ import { Accordion, AccordionItem } from 'accessible-astro-components'
   .faq-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     max-width: 1200px;
   }
 
@@ -140,6 +139,17 @@ import { Accordion, AccordionItem } from 'accessible-astro-components'
   .faq {
     gap: 2rem;
     padding: 5rem 2.5% 15rem;
+  }
+}
+
+@media  (max-width: 768px) {
+  .faq {
+    padding: 5rem 2.5% 15rem;
+  }
+
+  .faq-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 

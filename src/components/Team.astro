@@ -99,12 +99,13 @@ import linkedin from "../assets/images/linkedin.png"
     width: 23rem;
     height: 25rem;
     /* background: var(--Orange-Gradient, linear-gradient(180deg, #FEC401 0%, #FC9700 100%)); */
-    background-image: url(../assets/images/Kevin_bw.jpg);
+    background-image: url(../assets/images/Kevin_team.jpg);
+    filter: grayscale(100%);
     background-size: cover
   }
 
   .team-image-1:hover {
-    background-image: url(../assets/images/Kevin_c.jpg);
+    filter: none;
   }
 
   .top {
@@ -130,6 +131,13 @@ import linkedin from "../assets/images/linkedin.png"
   }
   @media (min-width: 768px) and (max-width: 992px) {
     .team-wrapper {
+      padding: 0 2.5%;
+      gap: 2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .team-wrapper {
+      flex-direction: column;
       padding: 0 2.5%;
       gap: 2rem;
     }
