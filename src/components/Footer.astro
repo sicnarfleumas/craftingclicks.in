@@ -130,4 +130,47 @@ import Primary from "./buttons/Primary.astro"
     text-underline-offset: 20%;
     text-decoration-color: var(--primary);
   }
+
+  @media screen and (max-width: 1024px) {
+    .container {
+      gap: 2rem;
+      padding: 2rem 2.5%;
+    }
+
+    .footer-wrapper {
+      gap: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: row;
+      gap: 1rem;
+      padding: 2rem 2.5%;
+    }
+
+    .footer-wrapper {
+      gap: 1.5rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem 2.5%;
+    }
+
+    .footer-wrapper {
+
+      gap: 1.5rem;
+    }
+
+    .section-title {
+      text-decoration: underline;
+    }
+
+    
+  }
 </style>
