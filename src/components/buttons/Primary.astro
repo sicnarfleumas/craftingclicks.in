@@ -1,11 +1,9 @@
 ---
-const { text } = Astro.props;
+const { text = "Book an appointment" } = Astro.props;
 ---
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kevinkagoo/call-with-kevin'});return false;">{text}</a>
-<!-- Calendly link widget end -->
+
+
+<a href="https://calendar.app.google/8PsoNWDuLh1yUqdb6" target="_blank">{text}</a>
 
 <style>
   a {
