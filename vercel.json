@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "craftingclicks.in"
+        }
+      ],
+      "destination": "https://craftingclicks.com/$1",
+      "permanent": false
+    }
+  ]
+} 
